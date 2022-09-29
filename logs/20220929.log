@@ -1,0 +1,65 @@
+2022-09-29 16:31:37,795 [    INFO] Started server process [72676]
+2022-09-29 16:31:37,796 [    INFO] Waiting for application startup.
+2022-09-29 16:31:37,797 [    INFO] Application startup complete.
+2022-09-29 16:31:37,813 [    INFO] Uvicorn running on http://localhost:8080 (Press CTRL+C to quit)
+2022-09-29 16:32:31,419 [   ERROR] Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\ansgy\AppData\Local\Programs\Python\Python38\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 401, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\ansgy\AppData\Local\Programs\Python\Python38\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\ansgy\AppData\Local\Programs\Python\Python38\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\ansgy\AppData\Local\Programs\Python\Python38\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\ansgy\AppData\Local\Programs\Python\Python38\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Users\ansgy\AppData\Local\Programs\Python\Python38\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\ansgy\AppData\Local\Programs\Python\Python38\lib\site-packages\starlette\middleware\cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\ansgy\AppData\Local\Programs\Python\Python38\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Users\ansgy\AppData\Local\Programs\Python\Python38\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\ansgy\AppData\Local\Programs\Python\Python38\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Users\ansgy\AppData\Local\Programs\Python\Python38\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\ansgy\AppData\Local\Programs\Python\Python38\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\ansgy\AppData\Local\Programs\Python\Python38\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\ansgy\AppData\Local\Programs\Python\Python38\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Users\ansgy\AppData\Local\Programs\Python\Python38\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\ansgy\AppData\Local\Programs\Python\Python38\lib\site-packages\fastapi\routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Users\ansgy\AppData\Local\Programs\Python\Python38\lib\site-packages\starlette\concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "C:\Users\ansgy\AppData\Local\Programs\Python\Python38\lib\site-packages\anyio\to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "C:\Users\ansgy\AppData\Local\Programs\Python\Python38\lib\site-packages\anyio\_backends\_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "C:\Users\ansgy\AppData\Local\Programs\Python\Python38\lib\site-packages\anyio\_backends\_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "C:\Users\ansgy\roboarete\test\pyQt5\webServer.py", line 22, in test1
+    log.showLog(f'{i} 번째 로그 입니다.')
+TypeError: showLog() missing 1 required positional argument: 'level'
+2022-09-29 16:32:56,920 [    INFO] Started server process [72820]
+2022-09-29 16:32:56,923 [    INFO] Waiting for application startup.
+2022-09-29 16:32:56,924 [    INFO] Application startup complete.
+2022-09-29 16:32:56,942 [    INFO] Uvicorn running on http://localhost:8080 (Press CTRL+C to quit)
+2022-09-29 16:47:46,630 [    INFO] Started server process [73044]
+2022-09-29 16:47:46,631 [    INFO] Waiting for application startup.
+2022-09-29 16:47:46,632 [    INFO] Application startup complete.
+2022-09-29 16:47:46,651 [    INFO] Uvicorn running on http://localhost:8080 (Press CTRL+C to quit)
+2022-09-29 16:50:47,965 [    INFO] Started server process [74172]
+2022-09-29 16:50:47,975 [    INFO] Waiting for application startup.
+2022-09-29 16:50:47,976 [    INFO] Application startup complete.
+2022-09-29 16:50:47,991 [    INFO] Uvicorn running on http://localhost:8080 (Press CTRL+C to quit)
+2022-09-29 16:51:14,325 [    INFO] Started server process [76032]
+2022-09-29 16:51:14,325 [    INFO] Waiting for application startup.
+2022-09-29 16:51:14,326 [    INFO] Application startup complete.
+2022-09-29 16:51:14,338 [    INFO] Uvicorn running on http://localhost:8080 (Press CTRL+C to quit)
